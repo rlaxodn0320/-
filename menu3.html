@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+  <title>PICATONG WEB SITE</title>
+  <img src="picatongmenu.jpg" width="20%">
+  <meta charset="utf=8">
+  <link rel="stylesheet" href="style.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-178009709-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-178009709-1');
+</script>
+
+</head>
+<body>
+  <input type="button" value="밤" onclick="
+  var target = document.querySelector('body');
+  if(this.value === '밤') {
+    target.style.backgroundColor = 'black';
+    target.style.color = 'white';
+    this.value = '낮'
+
+    var links = document.querySelectorAll('a');
+    var i = 0;
+    while(i<links.length) {
+      links[i].style.color='skyblue';
+      i=i+1;
+    }
+  } else {
+    target.style.backgroundColor = 'GhostWhite';
+    target.style.color = 'black';
+    this.value = '밤'
+
+    var links = document.querySelectorAll('a');
+    var i = 0;
+    while(i<links.length) {
+      links[i].style.color='cadetblue';
+      i=i+1;
+    }
+  }
+  ">
+  <h1><a href="menu3.html" title="welcome"><font color="CornflowerBlue">부활절 달걀</font></a></h1>
+  <ul>
+    <li><a href="menu1.html" title="MENU1"><strong>COMMENT</strong></a></li>
+    <li><a href="menu2.html" title="MENU2"><strong>VIDEO</strong></a></li>
+    <li><a href="index.html" title="main page"><strong>MAIN</strong></a></li>
+  </ul>
+  <div>
+  <h2>OTHER...</h2>
+  <p>
+    <h3>피카통을 방문할 의사가 있습니까?</h3>
+      없는데....<input type="checkbox"><br>
+      있어요!!  <input type="checkbox"><br>
+      체크박스는 아무 기능도 없어요...<input type="checkbox">
+  </p>
+</div>
+</div>
+  <p>
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5f6066604704467e89ef0235/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+  </p>
+</body>
+</html>

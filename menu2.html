@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+  <title>PICATONG WEB SITE</title>
+  <img src="picatongmenu.jpg" width="20%">
+  <meta charset="utf=8">
+  <link rel="stylesheet" href="style.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-178009709-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-178009709-1');
+</script>
+
+</head>
+<body>
+  <input type="button" value="밤" onclick="
+  var target = document.querySelector('body');
+  if(this.value === '밤') {
+    target.style.backgroundColor = 'black';
+    target.style.color = 'white';
+    this.value = '낮'
+
+    var links = document.querySelectorAll('a');
+    var i = 0;
+    while(i<links.length) {
+      links[i].style.color='skyblue';
+      i=i+1;
+    }
+  } else {
+    target.style.backgroundColor = 'GhostWhite';
+    target.style.color = 'black';
+    this.value = '밤'
+
+    var links = document.querySelectorAll('a');
+    var i = 0;
+    while(i<links.length) {
+      links[i].style.color='cadetblue';
+      i=i+1;
+    }
+  }
+  ">
+  <h1><a href="menu2.html" title="welcome"><font color="CornflowerBlue">VIDEO</font></a></h1>
+  <div id="grid">
+  <ul>
+    <li><a href="menu1.html" title="MENU1"><strong>COMMENT</strong></a></li>
+    <li><a href="index.html" title="main page"><strong>MAIN</strong></a></li>
+    <li><a href="menu3.html" title="MENU3"><strong>OTHER...</strong></a></li>
+  </ul>
+  <div>
+  <h2>VIDEO PAGE</h2>
+  <p>
+    <h3>아니! 새벽에 고양이를 훔쳐보다닛!</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/buFYB3Z0vMs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </p>
+  <p>
+    <h3>청소기를 좋아하는 신기한... 고양님</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FmpfHqNWSnc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </p>
+  <p>
+    <h3>영상을 이런식으로 올려야징</h3>
+  </p>
+</div>
+</div>
+  <p>
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5f6066604704467e89ef0235/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+  </p>
+</body>
+</html>
