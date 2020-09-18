@@ -18,30 +18,7 @@
 </head>
 <body>
   <input type="button" value="밤" onclick="
-  var target = document.querySelector('body');
-  if(this.value === '밤') {
-    target.style.backgroundColor = 'black';
-    target.style.color = 'white';
-    this.value = '낮'
-
-    var links = document.querySelectorAll('a');
-    var i = 0;
-    while(i<links.length) {
-      links[i].style.color='skyblue';
-      i=i+1;
-    }
-  } else {
-    target.style.backgroundColor = 'GhostWhite';
-    target.style.color = 'black';
-    this.value = '밤'
-
-    var links = document.querySelectorAll('a');
-    var i = 0;
-    while(i<links.length) {
-      links[i].style.color='cadetblue';
-      i=i+1;
-    }
-  }
+  nightDayHandler(this)
   ">
   <h1><a href="menu2.html" title="welcome"><font color="CornflowerBlue">VIDEO</font></a></h1>
   <div id="grid">
@@ -79,6 +56,7 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
-  </p>
+</p>
+  <script src="script.js"></script>
 </body>
 </html>
